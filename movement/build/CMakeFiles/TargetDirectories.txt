@@ -1,0 +1,3 @@
+/home/todzi/psp/movement/build/CMakeFiles/movement.dir
+/home/todzi/psp/movement/build/CMakeFiles/edit_cache.dir
+/home/todzi/psp/movement/build/CMakeFiles/rebuild_cache.dir
