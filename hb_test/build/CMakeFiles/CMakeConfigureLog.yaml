@@ -1,0 +1,652 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:228 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The target system is: Generic - 1 - mips
+      The host system is: Linux - 5.15.167.4-microsoft-standard-WSL2 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/todzi/pspdev/bin/psp-gcc 
+      Build flags: -I/home/todzi/pspdev/psp/include;-I/home/todzi/pspdev/psp/sdk/include;-DPSP
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/todzi/psp/hb_test/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/todzi/pspdev/bin/psp-g++ 
+      Build flags: -I/home/todzi/pspdev/psp/include;-I/home/todzi/pspdev/psp/sdk/include;-DPSP
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/todzi/psp/hb_test/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/todzi/psp/hb_test/build/CMakeFiles/CMakeScratch/TryCompile-t9CRAw"
+      binary: "/home/todzi/psp/hb_test/build/CMakeFiles/CMakeScratch/TryCompile-t9CRAw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-I/home/todzi/pspdev/psp/include -I/home/todzi/pspdev/psp/sdk/include -DPSP"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/todzi/pspdev/lib -L/home/todzi/pspdev/psp/lib -L/home/todzi/pspdev/psp/sdk/lib -Wl,-zmax-page-size=128"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/todzi/psp/hb_test/build/CMakeFiles/CMakeScratch/TryCompile-t9CRAw'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_256c2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_256c2.dir/build.make CMakeFiles/cmTC_256c2.dir/build
+        gmake[1]: Entering directory '/home/todzi/psp/hb_test/build/CMakeFiles/CMakeScratch/TryCompile-t9CRAw'
+        Building C object CMakeFiles/cmTC_256c2.dir/CMakeCCompilerABI.c.obj
+        /home/todzi/pspdev/bin/psp-gcc -DPSP -D_PSP_FW_VERSION=600 -D__PSP__  -I/home/todzi/pspdev/psp/include -I/home/todzi/pspdev/psp/sdk/include -DPSP    -v -o CMakeFiles/cmTC_256c2.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/home/todzi/pspdev/bin/psp-gcc
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/todzi/pspdev/psp/include' '-I' '/home/todzi/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_256c2.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_256c2.dir/'
+         /home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/cc1 -quiet -v -I /home/todzi/pspdev/psp/include -I /home/todzi/pspdev/psp/sdk/include -iprefix /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/ -isysroot /home/todzi/pspdev/bin/../psp -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D _PSP_FW_VERSION=600 -D __PSP__ -D PSP /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_256c2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mhard-float -msingle-float -version -o /tmp/cc3nIRIY.s
+        GNU C17 (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/todzi/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include"
+        ignoring nonexistent directory "/home/todzi/pspdev/bin/../psp/usr/local/include"
+        ignoring duplicate directory "/home/todzi/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include-fixed"
+        ignoring duplicate directory "/home/todzi/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include"
+        ignoring duplicate directory "/home/todzi/pspdev/bin/../psp/include"
+        ignoring duplicate directory "/home/todzi/pspdev/psp/include"
+          as it is a non-system directory that duplicates a system directory
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/todzi/pspdev/psp/sdk/include
+         /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/include
+         /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed
+         /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include
+        End of search list.
+        Compiler executable checksum: fb8efa594a3f828c05ac228613bb7f14
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/todzi/pspdev/psp/include' '-I' '/home/todzi/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_256c2.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_256c2.dir/'
+         /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_256c2.dir/CMakeCCompilerABI.c.obj /tmp/cc3nIRIY.s
+        COMPILER_PATH=/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../libexec/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../lib/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/todzi/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/todzi/pspdev/psp/include' '-I' '/home/todzi/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_256c2.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_256c2.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_256c2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_256c2.dir/link.txt --verbose=1
+        /home/todzi/pspdev/bin/psp-gcc -I/home/todzi/pspdev/psp/include -I/home/todzi/pspdev/psp/sdk/include -DPSP  -L/home/todzi/pspdev/lib -L/home/todzi/pspdev/psp/lib -L/home/todzi/pspdev/psp/sdk/lib -Wl,-zmax-page-size=128 -v CMakeFiles/cmTC_256c2.dir/CMakeCCompilerABI.c.obj -o cmTC_256c2   -L/home/todzi/pspdev/lib  -L/home/todzi/pspdev/psp/lib  -L/home/todzi/pspdev/psp/sdk/lib 
+        Using built-in specs.
+        COLLECT_GCC=/home/todzi/pspdev/bin/psp-gcc
+        COLLECT_LTO_WRAPPER=/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COMPILER_PATH=/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../libexec/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../lib/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/todzi/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-I' '/home/todzi/pspdev/psp/include' '-I' '/home/todzi/pspdev/psp/sdk/include' '-D' 'PSP' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_256c2' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_256c2.'
+         /home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2 -plugin /home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so -plugin-opt=/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc03zzg9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lpspkernel -plugin-opt=-pass-through=-lgcc --sysroot=/home/todzi/pspdev/bin/../psp -EL -o cmTC_256c2 /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o -L/home/todzi/pspdev/lib -L/home/todzi/pspdev/psp/lib -L/home/todzi/pspdev/psp/sdk/lib -L/home/todzi/pspdev/lib -L/home/todzi/pspdev/psp/lib -L/home/todzi/pspdev/psp/sdk/lib -L/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0 -L/home/todzi/pspdev/bin/../lib/gcc -L/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib -L/home/todzi/pspdev/bin/../psp/lib -zmax-page-size=128 CMakeFiles/cmTC_256c2.dir/CMakeCCompilerABI.c.obj -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lpspkernel -lgcc /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o
+        /home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -fresolution=/tmp/cc03zzg9.res -flinker-output=exec /home/todzi/pspdev/psp/lib/libpthread.a@0x60cea /home/todzi/pspdev/psp/lib/libpthread.a@0x62d7e /home/todzi/pspdev/psp/lib/libpthread.a@0x65066 /home/todzi/pspdev/psp/lib/libpthread.a@0x66b3e /home/todzi/pspdev/psp/lib/libpthread.a@0x1aae /home/todzi/pspdev/psp/lib/libpthread.a@0x510a /home/todzi/pspdev/psp/lib/libpthread.a@0x719e /home/todzi/pspdev/psp/lib/libpthread.a@0xb6de /home/todzi/pspdev/psp/lib/libpthread.a@0x1a40a /home/todzi/pspdev/psp/lib/libpthread.a@0x1c2f2 /home/todzi/pspdev/psp/lib/libpthread.a@0x27162 /home/todzi/pspdev/psp/lib/libpthread.a@0x54a36 /home/todzi/pspdev/psp/lib/libpthread.a@0x594e6 /home/todzi/pspdev/psp/lib/libpthread.a@0x5cfd6 /home/todzi/pspdev/psp/lib/libpthread.a@0x5eb2a /home/todzi/pspdev/psp/lib/libpthread.a@0x68e4a /home/todzi/pspdev/psp/lib/libpthread.a@0x6a35e /home/todzi/pspdev/psp/lib/libpthread.a@0x6c8e2 /home/todzi/pspdev/psp/lib/libpthread.a@0x365a 
+        /home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -fresolution=/tmp/cc03zzg9.res -flinker-output=exec /home/todzi/pspdev/psp/lib/libpthread.a@0x60cea /home/todzi/pspdev/psp/lib/libpthread.a@0x62d7e /home/todzi/pspdev/psp/lib/libpthread.a@0x65066 /home/todzi/pspdev/psp/lib/libpthread.a@0x66b3e /home/todzi/pspdev/psp/lib/libpthread.a@0x1aae /home/todzi/pspdev/psp/lib/libpthread.a@0x510a /home/todzi/pspdev/psp/lib/libpthread.a@0x719e /home/todzi/pspdev/psp/lib/libpthread.a@0xb6de /home/todzi/pspdev/psp/lib/libpthread.a@0x1a40a /home/todzi/pspdev/psp/lib/libpthread.a@0x1c2f2 /home/todzi/pspdev/psp/lib/libpthread.a@0x27162 /home/todzi/pspdev/psp/lib/libpthread.a@0x54a36 /home/todzi/pspdev/psp/lib/libpthread.a@0x594e6 /home/todzi/pspdev/psp/lib/libpthread.a@0x5cfd6 /home/todzi/pspdev/psp/lib/libpthread.a@0x5eb2a /home/todzi/pspdev/psp/lib/libpthread.a@0x68e4a /home/todzi/pspdev/psp/lib/libpthread.a@0x6a35e /home/todzi/pspdev/psp/lib/libpthread.a@0x6c8e2 /home/todzi/pspdev/psp/lib/libpthread.a@0x365a 
+        /home/todzi/pspdev/bin/psp-gcc @/tmp/ccRst88A
+        Using built-in specs.
+        COLLECT_GCC=/home/todzi/pspdev/bin/psp-gcc
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-v' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccDleak6.ltrans.out' '-fwpa' '-fresolution=/tmp/cc03zzg9.res' '-flinker-output=exec'
+         /home/todzi/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/lto1 -quiet -dumpbase ./cmTC_256c2.wpa -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans-output-list=/tmp/ccDleak6.ltrans.out -fwpa -fresolution=/tmp/cc03zzg9.res -flinker-output=exec @/tmp/ccxD0WYI
+        GNU GIMPLE (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COMPILER_PATH=/home/todzi/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../libexec/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../lib/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/todzi/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-v' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccDleak6.ltrans.out' '-fwpa' '-fresolution=/tmp/cc03zzg9.res' '-flinker-output=exec' '-dumpdir' './cmTC_256c2.wpa.'
+        /home/todzi/pspdev/bin/psp-gcc @/tmp/ccubo4DV
+        Using built-in specs.
+        COLLECT_GCC=/home/todzi/pspdev/bin/psp-gcc
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-v' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccDleak6.ltrans0.ltrans.o'
+         /home/todzi/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/lto1 -quiet -dumpbase ./cmTC_256c2.ltrans0.ltrans -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans @/tmp/ccE1oIv0 -o /tmp/ccTwT5Ec.s
+        GNU GIMPLE (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-v' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccDleak6.ltrans0.ltrans.o'
+         /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O2 -mabi=eabi -mhard-float -mhard-float -msingle-float -msingle-float -o /tmp/ccDleak6.ltrans0.ltrans.o /tmp/ccTwT5Ec.s
+        COMPILER_PATH=/home/todzi/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../libexec/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../lib/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/todzi/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-v' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccDleak6.ltrans0.ltrans.o' '-dumpdir' './cmTC_256c2.ltrans0.ltrans.'
+        COLLECT_GCC_OPTIONS='-I' '/home/todzi/pspdev/psp/include' '-I' '/home/todzi/pspdev/psp/sdk/include' '-D' 'PSP' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_256c2' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_256c2.'
+        gmake[1]: Leaving directory '/home/todzi/psp/hb_test/build/CMakeFiles/CMakeScratch/TryCompile-t9CRAw'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/todzi/pspdev/psp/sdk/include]
+          add: [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/include]
+          add: [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed]
+          add: [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include]
+        end of search list found
+        collapse include dir [/home/todzi/pspdev/psp/sdk/include] ==> [/home/todzi/pspdev/psp/sdk/include]
+        collapse include dir [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/include] ==> [/home/todzi/pspdev/lib/gcc/psp/14.1.0/include]
+        collapse include dir [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed] ==> [/home/todzi/pspdev/lib/gcc/psp/14.1.0/include-fixed]
+        collapse include dir [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include] ==> [/home/todzi/pspdev/psp/include]
+        implicit include dirs: [/home/todzi/pspdev/psp/sdk/include;/home/todzi/pspdev/lib/gcc/psp/14.1.0/include;/home/todzi/pspdev/lib/gcc/psp/14.1.0/include-fixed;/home/todzi/pspdev/psp/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(psp-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/todzi/psp/hb_test/build/CMakeFiles/CMakeScratch/TryCompile-t9CRAw']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_256c2/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_256c2.dir/build.make CMakeFiles/cmTC_256c2.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/todzi/psp/hb_test/build/CMakeFiles/CMakeScratch/TryCompile-t9CRAw']
+        ignore line: [Building C object CMakeFiles/cmTC_256c2.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/home/todzi/pspdev/bin/psp-gcc -DPSP -D_PSP_FW_VERSION=600 -D__PSP__  -I/home/todzi/pspdev/psp/include -I/home/todzi/pspdev/psp/sdk/include -DPSP    -v -o CMakeFiles/cmTC_256c2.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/todzi/pspdev/bin/psp-gcc]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/todzi/pspdev/psp/include' '-I' '/home/todzi/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_256c2.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_256c2.dir/']
+        ignore line: [ /home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/cc1 -quiet -v -I /home/todzi/pspdev/psp/include -I /home/todzi/pspdev/psp/sdk/include -iprefix /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/ -isysroot /home/todzi/pspdev/bin/../psp -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D _PSP_FW_VERSION=600 -D __PSP__ -D PSP /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_256c2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mhard-float -msingle-float -version -o /tmp/cc3nIRIY.s]
+        ignore line: [GNU C17 (GCC) version 14.1.0 (psp)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+        ignore line: [warning: GMP header version 6.2.1 differs from library version 6.3.0.]
+        ignore line: [warning: MPFR header version 4.1.0 differs from library version 4.2.1.]
+        ignore line: [warning: MPC header version 1.2.1 differs from library version 1.3.1.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/todzi/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/todzi/pspdev/bin/../psp/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/home/todzi/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/todzi/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include"]
+        ignore line: [ignoring duplicate directory "/home/todzi/pspdev/bin/../psp/include"]
+        ignore line: [ignoring duplicate directory "/home/todzi/pspdev/psp/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/todzi/pspdev/psp/sdk/include]
+        ignore line: [ /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/include]
+        ignore line: [ /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed]
+        ignore line: [ /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: fb8efa594a3f828c05ac228613bb7f14]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/todzi/pspdev/psp/include' '-I' '/home/todzi/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_256c2.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_256c2.dir/']
+        ignore line: [ /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_256c2.dir/CMakeCCompilerABI.c.obj /tmp/cc3nIRIY.s]
+        ignore line: [COMPILER_PATH=/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../libexec/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../lib/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/todzi/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/todzi/pspdev/psp/include' '-I' '/home/todzi/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_256c2.dir/CMakeCCompilerABI.c.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_256c2.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_256c2]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_256c2.dir/link.txt --verbose=1]
+        ignore line: [/home/todzi/pspdev/bin/psp-gcc -I/home/todzi/pspdev/psp/include -I/home/todzi/pspdev/psp/sdk/include -DPSP  -L/home/todzi/pspdev/lib -L/home/todzi/pspdev/psp/lib -L/home/todzi/pspdev/psp/sdk/lib -Wl -zmax-page-size=128 -v CMakeFiles/cmTC_256c2.dir/CMakeCCompilerABI.c.obj -o cmTC_256c2   -L/home/todzi/pspdev/lib  -L/home/todzi/pspdev/psp/lib  -L/home/todzi/pspdev/psp/sdk/lib ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/todzi/pspdev/bin/psp-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../libexec/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../lib/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/todzi/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/todzi/pspdev/psp/include' '-I' '/home/todzi/pspdev/psp/sdk/include' '-D' 'PSP' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_256c2' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_256c2.']
+        link line: [ /home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2 -plugin /home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so -plugin-opt=/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc03zzg9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lpspkernel -plugin-opt=-pass-through=-lgcc --sysroot=/home/todzi/pspdev/bin/../psp -EL -o cmTC_256c2 /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o -L/home/todzi/pspdev/lib -L/home/todzi/pspdev/psp/lib -L/home/todzi/pspdev/psp/sdk/lib -L/home/todzi/pspdev/lib -L/home/todzi/pspdev/psp/lib -L/home/todzi/pspdev/psp/sdk/lib -L/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0 -L/home/todzi/pspdev/bin/../lib/gcc -L/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib -L/home/todzi/pspdev/bin/../psp/lib -zmax-page-size=128 CMakeFiles/cmTC_256c2.dir/CMakeCCompilerABI.c.obj -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lpspkernel -lgcc /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o]
+          arg [/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc03zzg9.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lm] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthreadglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lcglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsputility] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsprtc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_inet] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_resolver] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspsdk] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspmodinfo] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspuser] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspkernel] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/home/todzi/pspdev/bin/../psp] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_256c2] ==> ignore
+          arg [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o] ==> obj [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o]
+          arg [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o] ==> obj [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o]
+          arg [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o] ==> obj [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o]
+          arg [-L/home/todzi/pspdev/lib] ==> dir [/home/todzi/pspdev/lib]
+          arg [-L/home/todzi/pspdev/psp/lib] ==> dir [/home/todzi/pspdev/psp/lib]
+          arg [-L/home/todzi/pspdev/psp/sdk/lib] ==> dir [/home/todzi/pspdev/psp/sdk/lib]
+          arg [-L/home/todzi/pspdev/lib] ==> dir [/home/todzi/pspdev/lib]
+          arg [-L/home/todzi/pspdev/psp/lib] ==> dir [/home/todzi/pspdev/psp/lib]
+          arg [-L/home/todzi/pspdev/psp/sdk/lib] ==> dir [/home/todzi/pspdev/psp/sdk/lib]
+          arg [-L/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0] ==> dir [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0]
+          arg [-L/home/todzi/pspdev/bin/../lib/gcc] ==> dir [/home/todzi/pspdev/bin/../lib/gcc]
+          arg [-L/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib] ==> dir [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib]
+          arg [-L/home/todzi/pspdev/bin/../psp/lib] ==> dir [/home/todzi/pspdev/bin/../psp/lib]
+          arg [-zmax-page-size=128] ==> ignore
+          arg [CMakeFiles/cmTC_256c2.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lm] ==> lib [m]
+          arg [--start-group] ==> ignore
+          arg [-lpthreadglue] ==> lib [pthreadglue]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lcglue] ==> lib [cglue]
+          arg [-lc] ==> lib [c]
+          arg [--end-group] ==> ignore
+          arg [-lpsputility] ==> lib [psputility]
+          arg [-lpsprtc] ==> lib [psprtc]
+          arg [-lpspnet_inet] ==> lib [pspnet_inet]
+          arg [-lpspnet_resolver] ==> lib [pspnet_resolver]
+          arg [-lpspsdk] ==> lib [pspsdk]
+          arg [-lpspmodinfo] ==> lib [pspmodinfo]
+          arg [-lpspuser] ==> lib [pspuser]
+          arg [-lpspkernel] ==> lib [pspkernel]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o] ==> obj [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o]
+          arg [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o] ==> obj [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o]
+        collapse obj [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o] ==> [/home/todzi/pspdev/psp/lib/crt0.o]
+        collapse obj [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o] ==> [/home/todzi/pspdev/lib/gcc/psp/14.1.0/crti.o]
+        collapse obj [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o] ==> [/home/todzi/pspdev/lib/gcc/psp/14.1.0/crtbegin.o]
+        collapse obj [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o] ==> [/home/todzi/pspdev/lib/gcc/psp/14.1.0/crtend.o]
+        collapse obj [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o] ==> [/home/todzi/pspdev/lib/gcc/psp/14.1.0/crtn.o]
+        collapse library dir [/home/todzi/pspdev/lib] ==> [/home/todzi/pspdev/lib]
+        collapse library dir [/home/todzi/pspdev/psp/lib] ==> [/home/todzi/pspdev/psp/lib]
+        collapse library dir [/home/todzi/pspdev/psp/sdk/lib] ==> [/home/todzi/pspdev/psp/sdk/lib]
+        collapse library dir [/home/todzi/pspdev/lib] ==> [/home/todzi/pspdev/lib]
+        collapse library dir [/home/todzi/pspdev/psp/lib] ==> [/home/todzi/pspdev/psp/lib]
+        collapse library dir [/home/todzi/pspdev/psp/sdk/lib] ==> [/home/todzi/pspdev/psp/sdk/lib]
+        collapse library dir [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0] ==> [/home/todzi/pspdev/lib/gcc/psp/14.1.0]
+        collapse library dir [/home/todzi/pspdev/bin/../lib/gcc] ==> [/home/todzi/pspdev/lib/gcc]
+        collapse library dir [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib] ==> [/home/todzi/pspdev/psp/lib]
+        collapse library dir [/home/todzi/pspdev/bin/../psp/lib] ==> [/home/todzi/pspdev/psp/lib]
+        implicit libs: [gcc;m;pthreadglue;pthread;cglue;c;psputility;psprtc;pspnet_inet;pspnet_resolver;pspsdk;pspmodinfo;pspuser;pspkernel;gcc]
+        implicit objs: [/home/todzi/pspdev/psp/lib/crt0.o;/home/todzi/pspdev/lib/gcc/psp/14.1.0/crti.o;/home/todzi/pspdev/lib/gcc/psp/14.1.0/crtbegin.o;/home/todzi/pspdev/lib/gcc/psp/14.1.0/crtend.o;/home/todzi/pspdev/lib/gcc/psp/14.1.0/crtn.o]
+        implicit dirs: [/home/todzi/pspdev/lib;/home/todzi/pspdev/psp/lib;/home/todzi/pspdev/psp/sdk/lib;/home/todzi/pspdev/lib/gcc/psp/14.1.0;/home/todzi/pspdev/lib/gcc]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/todzi/psp/hb_test/build/CMakeFiles/CMakeScratch/TryCompile-s5he8N"
+      binary: "/home/todzi/psp/hb_test/build/CMakeFiles/CMakeScratch/TryCompile-s5he8N"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-I/home/todzi/pspdev/psp/include -I/home/todzi/pspdev/psp/sdk/include -DPSP"
+      CMAKE_EXE_LINKER_FLAGS: "-L/home/todzi/pspdev/lib -L/home/todzi/pspdev/psp/lib -L/home/todzi/pspdev/psp/sdk/lib -Wl,-zmax-page-size=128"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/todzi/psp/hb_test/build/CMakeFiles/CMakeScratch/TryCompile-s5he8N'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d670a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d670a.dir/build.make CMakeFiles/cmTC_d670a.dir/build
+        gmake[1]: Entering directory '/home/todzi/psp/hb_test/build/CMakeFiles/CMakeScratch/TryCompile-s5he8N'
+        Building CXX object CMakeFiles/cmTC_d670a.dir/CMakeCXXCompilerABI.cpp.obj
+        /home/todzi/pspdev/bin/psp-g++ -DPSP -D_PSP_FW_VERSION=600 -D__PSP__  -I/home/todzi/pspdev/psp/include -I/home/todzi/pspdev/psp/sdk/include -DPSP    -v -o CMakeFiles/cmTC_d670a.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/home/todzi/pspdev/bin/psp-g++
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/todzi/pspdev/psp/include' '-I' '/home/todzi/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_d670a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_d670a.dir/'
+         /home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/cc1plus -quiet -v -I /home/todzi/pspdev/psp/include -I /home/todzi/pspdev/psp/sdk/include -iprefix /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/ -isysroot /home/todzi/pspdev/bin/../psp -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D _PSP_FW_VERSION=600 -D __PSP__ -D PSP /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_d670a.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mhard-float -msingle-float -version -o /tmp/cc77XBc7.s
+        GNU C++17 (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/todzi/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0"
+        ignoring duplicate directory "/home/todzi/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp"
+        ignoring duplicate directory "/home/todzi/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward"
+        ignoring duplicate directory "/home/todzi/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include"
+        ignoring nonexistent directory "/home/todzi/pspdev/bin/../psp/usr/local/include"
+        ignoring duplicate directory "/home/todzi/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include-fixed"
+        ignoring duplicate directory "/home/todzi/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include"
+        ignoring duplicate directory "/home/todzi/pspdev/bin/../psp/include"
+        ignoring duplicate directory "/home/todzi/pspdev/psp/include"
+          as it is a non-system directory that duplicates a system directory
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/todzi/pspdev/psp/sdk/include
+         /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0
+         /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp
+         /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward
+         /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/include
+         /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed
+         /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include
+        End of search list.
+        Compiler executable checksum: 23813e08ac5f2ee016e662e2e743070a
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/todzi/pspdev/psp/include' '-I' '/home/todzi/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_d670a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_d670a.dir/'
+         /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_d670a.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cc77XBc7.s
+        COMPILER_PATH=/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../libexec/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../lib/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/todzi/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/todzi/pspdev/psp/include' '-I' '/home/todzi/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_d670a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_d670a.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_d670a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d670a.dir/link.txt --verbose=1
+        /home/todzi/pspdev/bin/psp-g++ -I/home/todzi/pspdev/psp/include -I/home/todzi/pspdev/psp/sdk/include -DPSP  -L/home/todzi/pspdev/lib -L/home/todzi/pspdev/psp/lib -L/home/todzi/pspdev/psp/sdk/lib -Wl,-zmax-page-size=128 -v CMakeFiles/cmTC_d670a.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_d670a   -L/home/todzi/pspdev/lib  -L/home/todzi/pspdev/psp/lib  -L/home/todzi/pspdev/psp/sdk/lib 
+        Using built-in specs.
+        COLLECT_GCC=/home/todzi/pspdev/bin/psp-g++
+        COLLECT_LTO_WRAPPER=/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COMPILER_PATH=/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../libexec/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../lib/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/todzi/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-I' '/home/todzi/pspdev/psp/include' '-I' '/home/todzi/pspdev/psp/sdk/include' '-D' 'PSP' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_d670a' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_d670a.'
+         /home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2 -plugin /home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so -plugin-opt=/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBQBTvz.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lpspkernel -plugin-opt=-pass-through=-lgcc --sysroot=/home/todzi/pspdev/bin/../psp -EL -o cmTC_d670a /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o -L/home/todzi/pspdev/lib -L/home/todzi/pspdev/psp/lib -L/home/todzi/pspdev/psp/sdk/lib -L/home/todzi/pspdev/lib -L/home/todzi/pspdev/psp/lib -L/home/todzi/pspdev/psp/sdk/lib -L/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0 -L/home/todzi/pspdev/bin/../lib/gcc -L/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib -L/home/todzi/pspdev/bin/../psp/lib -zmax-page-size=128 CMakeFiles/cmTC_d670a.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lpspkernel -lgcc /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o
+        /home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -fresolution=/tmp/ccBQBTvz.res -flinker-output=exec /home/todzi/pspdev/psp/lib/libpthread.a@0x60cea /home/todzi/pspdev/psp/lib/libpthread.a@0x62d7e /home/todzi/pspdev/psp/lib/libpthread.a@0x65066 /home/todzi/pspdev/psp/lib/libpthread.a@0x66b3e /home/todzi/pspdev/psp/lib/libpthread.a@0x1aae /home/todzi/pspdev/psp/lib/libpthread.a@0x510a /home/todzi/pspdev/psp/lib/libpthread.a@0x719e /home/todzi/pspdev/psp/lib/libpthread.a@0xb6de /home/todzi/pspdev/psp/lib/libpthread.a@0x1a40a /home/todzi/pspdev/psp/lib/libpthread.a@0x1c2f2 /home/todzi/pspdev/psp/lib/libpthread.a@0x27162 /home/todzi/pspdev/psp/lib/libpthread.a@0x54a36 /home/todzi/pspdev/psp/lib/libpthread.a@0x594e6 /home/todzi/pspdev/psp/lib/libpthread.a@0x5cfd6 /home/todzi/pspdev/psp/lib/libpthread.a@0x5eb2a /home/todzi/pspdev/psp/lib/libpthread.a@0x68e4a /home/todzi/pspdev/psp/lib/libpthread.a@0x6a35e /home/todzi/pspdev/psp/lib/libpthread.a@0x6c8e2 /home/todzi/pspdev/psp/lib/libpthread.a@0x365a 
+        /home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -fresolution=/tmp/ccBQBTvz.res -flinker-output=exec /home/todzi/pspdev/psp/lib/libpthread.a@0x60cea /home/todzi/pspdev/psp/lib/libpthread.a@0x62d7e /home/todzi/pspdev/psp/lib/libpthread.a@0x65066 /home/todzi/pspdev/psp/lib/libpthread.a@0x66b3e /home/todzi/pspdev/psp/lib/libpthread.a@0x1aae /home/todzi/pspdev/psp/lib/libpthread.a@0x510a /home/todzi/pspdev/psp/lib/libpthread.a@0x719e /home/todzi/pspdev/psp/lib/libpthread.a@0xb6de /home/todzi/pspdev/psp/lib/libpthread.a@0x1a40a /home/todzi/pspdev/psp/lib/libpthread.a@0x1c2f2 /home/todzi/pspdev/psp/lib/libpthread.a@0x27162 /home/todzi/pspdev/psp/lib/libpthread.a@0x54a36 /home/todzi/pspdev/psp/lib/libpthread.a@0x594e6 /home/todzi/pspdev/psp/lib/libpthread.a@0x5cfd6 /home/todzi/pspdev/psp/lib/libpthread.a@0x5eb2a /home/todzi/pspdev/psp/lib/libpthread.a@0x68e4a /home/todzi/pspdev/psp/lib/libpthread.a@0x6a35e /home/todzi/pspdev/psp/lib/libpthread.a@0x6c8e2 /home/todzi/pspdev/psp/lib/libpthread.a@0x365a 
+        /home/todzi/pspdev/bin/psp-g++ @/tmp/ccvuPPmU
+        Using built-in specs.
+        COLLECT_GCC=/home/todzi/pspdev/bin/psp-g++
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-v' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccOwY0Gr.ltrans.out' '-fwpa' '-fresolution=/tmp/ccBQBTvz.res' '-flinker-output=exec'
+         /home/todzi/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/lto1 -quiet -dumpbase ./cmTC_d670a.wpa -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans-output-list=/tmp/ccOwY0Gr.ltrans.out -fwpa -fresolution=/tmp/ccBQBTvz.res -flinker-output=exec @/tmp/cc3ksw9K
+        GNU GIMPLE (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COMPILER_PATH=/home/todzi/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../libexec/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../lib/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/todzi/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-v' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans-output-list=/tmp/ccOwY0Gr.ltrans.out' '-fwpa' '-fresolution=/tmp/ccBQBTvz.res' '-flinker-output=exec' '-dumpdir' './cmTC_d670a.wpa.'
+        /home/todzi/pspdev/bin/psp-g++ @/tmp/ccxFhsYe
+        Using built-in specs.
+        COLLECT_GCC=/home/todzi/pspdev/bin/psp-g++
+        Target: psp
+        Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c,c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --silent
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-v' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccOwY0Gr.ltrans0.ltrans.o'
+         /home/todzi/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/lto1 -quiet -dumpbase ./cmTC_d670a.ltrans0.ltrans -mno-gpopt -mhard-float -msingle-float -mhard-float -msingle-float -O3 -version -fno-openmp -fno-openacc -fno-pie -fcf-protection=none -fltrans @/tmp/ccEUYT6C -o /tmp/ccVnITmq.s
+        GNU GIMPLE (GCC) version 14.1.0 (psp)
+        	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
+        warning: GMP header version 6.2.1 differs from library version 6.3.0.
+        warning: MPFR header version 4.1.0 differs from library version 4.2.1.
+        warning: MPC header version 1.2.1 differs from library version 1.3.1.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-v' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccOwY0Gr.ltrans0.ltrans.o'
+         /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O2 -mabi=eabi -mhard-float -mhard-float -msingle-float -msingle-float -o /tmp/ccOwY0Gr.ltrans0.ltrans.o /tmp/ccVnITmq.s
+        COMPILER_PATH=/home/todzi/pspdev/bin/../lib/gcc/../../libexec/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../lib/gcc/../../libexec/gcc/:/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../libexec/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/
+        LIBRARY_PATH=/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../lib/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/todzi/pspdev/bin/../psp/lib/
+        COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fno-pie' '-fcf-protection=none' '-mno-gpopt' '-mhard-float' '-msingle-float' '-O3' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-v' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float'   '-fltrans' '-o' '/tmp/ccOwY0Gr.ltrans0.ltrans.o' '-dumpdir' './cmTC_d670a.ltrans0.ltrans.'
+        COLLECT_GCC_OPTIONS='-I' '/home/todzi/pspdev/psp/include' '-I' '/home/todzi/pspdev/psp/sdk/include' '-D' 'PSP' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_d670a' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_d670a.'
+        gmake[1]: Leaving directory '/home/todzi/psp/hb_test/build/CMakeFiles/CMakeScratch/TryCompile-s5he8N'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/todzi/pspdev/psp/sdk/include]
+          add: [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0]
+          add: [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp]
+          add: [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward]
+          add: [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/include]
+          add: [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed]
+          add: [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include]
+        end of search list found
+        collapse include dir [/home/todzi/pspdev/psp/sdk/include] ==> [/home/todzi/pspdev/psp/sdk/include]
+        collapse include dir [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0] ==> [/home/todzi/pspdev/psp/include/c++/14.1.0]
+        collapse include dir [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp] ==> [/home/todzi/pspdev/psp/include/c++/14.1.0/psp]
+        collapse include dir [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward] ==> [/home/todzi/pspdev/psp/include/c++/14.1.0/backward]
+        collapse include dir [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/include] ==> [/home/todzi/pspdev/lib/gcc/psp/14.1.0/include]
+        collapse include dir [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed] ==> [/home/todzi/pspdev/lib/gcc/psp/14.1.0/include-fixed]
+        collapse include dir [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include] ==> [/home/todzi/pspdev/psp/include]
+        implicit include dirs: [/home/todzi/pspdev/psp/sdk/include;/home/todzi/pspdev/psp/include/c++/14.1.0;/home/todzi/pspdev/psp/include/c++/14.1.0/psp;/home/todzi/pspdev/psp/include/c++/14.1.0/backward;/home/todzi/pspdev/lib/gcc/psp/14.1.0/include;/home/todzi/pspdev/lib/gcc/psp/14.1.0/include-fixed;/home/todzi/pspdev/psp/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(psp-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/todzi/psp/hb_test/build/CMakeFiles/CMakeScratch/TryCompile-s5he8N']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d670a/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_d670a.dir/build.make CMakeFiles/cmTC_d670a.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/todzi/psp/hb_test/build/CMakeFiles/CMakeScratch/TryCompile-s5he8N']
+        ignore line: [Building CXX object CMakeFiles/cmTC_d670a.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/home/todzi/pspdev/bin/psp-g++ -DPSP -D_PSP_FW_VERSION=600 -D__PSP__  -I/home/todzi/pspdev/psp/include -I/home/todzi/pspdev/psp/sdk/include -DPSP    -v -o CMakeFiles/cmTC_d670a.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/todzi/pspdev/bin/psp-g++]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/todzi/pspdev/psp/include' '-I' '/home/todzi/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_d670a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_d670a.dir/']
+        ignore line: [ /home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/cc1plus -quiet -v -I /home/todzi/pspdev/psp/include -I /home/todzi/pspdev/psp/sdk/include -iprefix /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/ -isysroot /home/todzi/pspdev/bin/../psp -DPSP=1 -D__PSP__=1 -D_PSP=1 -D__psp__=1 -D PSP -D _PSP_FW_VERSION=600 -D __PSP__ -D PSP /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_d670a.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mhard-float -msingle-float -version -o /tmp/cc77XBc7.s]
+        ignore line: [GNU C++17 (GCC) version 14.1.0 (psp)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
+        ignore line: [warning: GMP header version 6.2.1 differs from library version 6.3.0.]
+        ignore line: [warning: MPFR header version 4.1.0 differs from library version 4.2.1.]
+        ignore line: [warning: MPC header version 1.2.1 differs from library version 1.3.1.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/todzi/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0"]
+        ignore line: [ignoring duplicate directory "/home/todzi/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp"]
+        ignore line: [ignoring duplicate directory "/home/todzi/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward"]
+        ignore line: [ignoring duplicate directory "/home/todzi/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/todzi/pspdev/bin/../psp/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/home/todzi/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/todzi/pspdev/bin/../lib/gcc/../../lib/gcc/psp/14.1.0/../../../../psp/include"]
+        ignore line: [ignoring duplicate directory "/home/todzi/pspdev/bin/../psp/include"]
+        ignore line: [ignoring duplicate directory "/home/todzi/pspdev/psp/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/todzi/pspdev/psp/sdk/include]
+        ignore line: [ /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0]
+        ignore line: [ /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/psp]
+        ignore line: [ /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include/c++/14.1.0/backward]
+        ignore line: [ /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/include]
+        ignore line: [ /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/include-fixed]
+        ignore line: [ /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 23813e08ac5f2ee016e662e2e743070a]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/todzi/pspdev/psp/include' '-I' '/home/todzi/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_d670a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_d670a.dir/']
+        ignore line: [ /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/as -EL -O1 -mabi=eabi -mhard-float -msingle-float -o CMakeFiles/cmTC_d670a.dir/CMakeCXXCompilerABI.cpp.obj /tmp/cc77XBc7.s]
+        ignore line: [COMPILER_PATH=/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../libexec/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../lib/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/todzi/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'PSP' '-D' '_PSP_FW_VERSION=600' '-D' '__PSP__' '-I' '/home/todzi/pspdev/psp/include' '-I' '/home/todzi/pspdev/psp/sdk/include' '-D' 'PSP' '-v' '-o' 'CMakeFiles/cmTC_d670a.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mhard-float' '-msingle-float' '-dumpdir' 'CMakeFiles/cmTC_d670a.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_d670a]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d670a.dir/link.txt --verbose=1]
+        ignore line: [/home/todzi/pspdev/bin/psp-g++ -I/home/todzi/pspdev/psp/include -I/home/todzi/pspdev/psp/sdk/include -DPSP  -L/home/todzi/pspdev/lib -L/home/todzi/pspdev/psp/lib -L/home/todzi/pspdev/psp/sdk/lib -Wl -zmax-page-size=128 -v CMakeFiles/cmTC_d670a.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_d670a   -L/home/todzi/pspdev/lib  -L/home/todzi/pspdev/psp/lib  -L/home/todzi/pspdev/psp/sdk/lib ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/todzi/pspdev/bin/psp-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper]
+        ignore line: [Target: psp]
+        ignore line: [Configured with: ../configure --quiet --prefix=/home/runner/work/pspdev/pspdev/pspdev --target=psp --with-sysroot=/home/runner/work/pspdev/pspdev/pspdev/psp --with-native-system-header-dir=/include --enable-languages=c c++ --with-float=hard --with-newlib --disable-libssp --disable-multilib --enable-threads=posix --disable-tls --silent]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../libexec/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/bin/]
+        ignore line: [LIBRARY_PATH=/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/:/home/todzi/pspdev/bin/../lib/gcc/:/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/:/home/todzi/pspdev/bin/../psp/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-I' '/home/todzi/pspdev/psp/include' '-I' '/home/todzi/pspdev/psp/sdk/include' '-D' 'PSP' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-v' '-o' 'cmTC_d670a' '-L/home/todzi/pspdev/lib' '-L/home/todzi/pspdev/psp/lib' '-L/home/todzi/pspdev/psp/sdk/lib' '-mhard-float' '-msingle-float' '-dumpdir' 'cmTC_d670a.']
+        link line: [ /home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2 -plugin /home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so -plugin-opt=/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBQBTvz.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lpthreadglue -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lcglue -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lpsputility -plugin-opt=-pass-through=-lpsprtc -plugin-opt=-pass-through=-lpspnet_inet -plugin-opt=-pass-through=-lpspnet_resolver -plugin-opt=-pass-through=-lpspsdk -plugin-opt=-pass-through=-lpspmodinfo -plugin-opt=-pass-through=-lpspuser -plugin-opt=-pass-through=-lpspkernel -plugin-opt=-pass-through=-lgcc --sysroot=/home/todzi/pspdev/bin/../psp -EL -o cmTC_d670a /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o -L/home/todzi/pspdev/lib -L/home/todzi/pspdev/psp/lib -L/home/todzi/pspdev/psp/sdk/lib -L/home/todzi/pspdev/lib -L/home/todzi/pspdev/psp/lib -L/home/todzi/pspdev/psp/sdk/lib -L/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0 -L/home/todzi/pspdev/bin/../lib/gcc -L/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib -L/home/todzi/pspdev/bin/../psp/lib -zmax-page-size=128 CMakeFiles/cmTC_d670a.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lm --start-group -lpthreadglue -lpthread -lcglue -lc --end-group -lpsputility -lpsprtc -lpspnet_inet -lpspnet_resolver -lpspsdk -lpspmodinfo -lpspuser -lpspkernel -lgcc /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o /home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o]
+          arg [/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/todzi/pspdev/bin/../libexec/gcc/psp/14.1.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccBQBTvz.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lm] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthreadglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lcglue] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsputility] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpsprtc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_inet] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspnet_resolver] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspsdk] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspmodinfo] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspuser] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpspkernel] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/home/todzi/pspdev/bin/../psp] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_d670a] ==> ignore
+          arg [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o] ==> obj [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o]
+          arg [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o] ==> obj [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o]
+          arg [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o] ==> obj [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o]
+          arg [-L/home/todzi/pspdev/lib] ==> dir [/home/todzi/pspdev/lib]
+          arg [-L/home/todzi/pspdev/psp/lib] ==> dir [/home/todzi/pspdev/psp/lib]
+          arg [-L/home/todzi/pspdev/psp/sdk/lib] ==> dir [/home/todzi/pspdev/psp/sdk/lib]
+          arg [-L/home/todzi/pspdev/lib] ==> dir [/home/todzi/pspdev/lib]
+          arg [-L/home/todzi/pspdev/psp/lib] ==> dir [/home/todzi/pspdev/psp/lib]
+          arg [-L/home/todzi/pspdev/psp/sdk/lib] ==> dir [/home/todzi/pspdev/psp/sdk/lib]
+          arg [-L/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0] ==> dir [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0]
+          arg [-L/home/todzi/pspdev/bin/../lib/gcc] ==> dir [/home/todzi/pspdev/bin/../lib/gcc]
+          arg [-L/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib] ==> dir [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib]
+          arg [-L/home/todzi/pspdev/bin/../psp/lib] ==> dir [/home/todzi/pspdev/bin/../psp/lib]
+          arg [-zmax-page-size=128] ==> ignore
+          arg [CMakeFiles/cmTC_d670a.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lm] ==> lib [m]
+          arg [--start-group] ==> ignore
+          arg [-lpthreadglue] ==> lib [pthreadglue]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lcglue] ==> lib [cglue]
+          arg [-lc] ==> lib [c]
+          arg [--end-group] ==> ignore
+          arg [-lpsputility] ==> lib [psputility]
+          arg [-lpsprtc] ==> lib [psprtc]
+          arg [-lpspnet_inet] ==> lib [pspnet_inet]
+          arg [-lpspnet_resolver] ==> lib [pspnet_resolver]
+          arg [-lpspsdk] ==> lib [pspsdk]
+          arg [-lpspmodinfo] ==> lib [pspmodinfo]
+          arg [-lpspuser] ==> lib [pspuser]
+          arg [-lpspkernel] ==> lib [pspkernel]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o] ==> obj [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o]
+          arg [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o] ==> obj [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o]
+        collapse obj [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib/crt0.o] ==> [/home/todzi/pspdev/psp/lib/crt0.o]
+        collapse obj [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crti.o] ==> [/home/todzi/pspdev/lib/gcc/psp/14.1.0/crti.o]
+        collapse obj [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtbegin.o] ==> [/home/todzi/pspdev/lib/gcc/psp/14.1.0/crtbegin.o]
+        collapse obj [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtend.o] ==> [/home/todzi/pspdev/lib/gcc/psp/14.1.0/crtend.o]
+        collapse obj [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/crtn.o] ==> [/home/todzi/pspdev/lib/gcc/psp/14.1.0/crtn.o]
+        collapse library dir [/home/todzi/pspdev/lib] ==> [/home/todzi/pspdev/lib]
+        collapse library dir [/home/todzi/pspdev/psp/lib] ==> [/home/todzi/pspdev/psp/lib]
+        collapse library dir [/home/todzi/pspdev/psp/sdk/lib] ==> [/home/todzi/pspdev/psp/sdk/lib]
+        collapse library dir [/home/todzi/pspdev/lib] ==> [/home/todzi/pspdev/lib]
+        collapse library dir [/home/todzi/pspdev/psp/lib] ==> [/home/todzi/pspdev/psp/lib]
+        collapse library dir [/home/todzi/pspdev/psp/sdk/lib] ==> [/home/todzi/pspdev/psp/sdk/lib]
+        collapse library dir [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0] ==> [/home/todzi/pspdev/lib/gcc/psp/14.1.0]
+        collapse library dir [/home/todzi/pspdev/bin/../lib/gcc] ==> [/home/todzi/pspdev/lib/gcc]
+        collapse library dir [/home/todzi/pspdev/bin/../lib/gcc/psp/14.1.0/../../../../psp/lib] ==> [/home/todzi/pspdev/psp/lib]
+        collapse library dir [/home/todzi/pspdev/bin/../psp/lib] ==> [/home/todzi/pspdev/psp/lib]
+        implicit libs: [stdc++;m;gcc;m;pthreadglue;pthread;cglue;c;psputility;psprtc;pspnet_inet;pspnet_resolver;pspsdk;pspmodinfo;pspuser;pspkernel;gcc]
+        implicit objs: [/home/todzi/pspdev/psp/lib/crt0.o;/home/todzi/pspdev/lib/gcc/psp/14.1.0/crti.o;/home/todzi/pspdev/lib/gcc/psp/14.1.0/crtbegin.o;/home/todzi/pspdev/lib/gcc/psp/14.1.0/crtend.o;/home/todzi/pspdev/lib/gcc/psp/14.1.0/crtn.o]
+        implicit dirs: [/home/todzi/pspdev/lib;/home/todzi/pspdev/psp/lib;/home/todzi/pspdev/psp/sdk/lib;/home/todzi/pspdev/lib/gcc/psp/14.1.0;/home/todzi/pspdev/lib/gcc]
+        implicit fwks: []
+      
+      
+...

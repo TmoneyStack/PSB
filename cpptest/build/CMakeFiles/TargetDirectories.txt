@@ -1,0 +1,3 @@
+/home/todzi/psp/cpptest/build/CMakeFiles/cpptest.dir
+/home/todzi/psp/cpptest/build/CMakeFiles/edit_cache.dir
+/home/todzi/psp/cpptest/build/CMakeFiles/rebuild_cache.dir
